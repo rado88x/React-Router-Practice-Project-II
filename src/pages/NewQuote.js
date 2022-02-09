@@ -1,9 +1,14 @@
+import { useHistory } from "react-router-dom";
 import { Fragment } from "react";
 import QuoteForm from "./../components/quotes/QuoteForm";
 
 const NewQuoute = () => {
+const history = useHistory();
+
     const addQuoteHandler = quoteData => {
         console.log(quoteData);
+
+        history.push("/quotes")
     }
 
   return (
