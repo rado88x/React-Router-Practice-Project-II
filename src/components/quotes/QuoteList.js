@@ -22,7 +22,6 @@ const QuoteList = (props) => {
 
   const queryData = location.search;
   const isSortingAscending = queryData.split("=")[1] === "asc";
-  console.log("SPLIT= " + isSortingAscending)
   
   const sortedQuotes = sortQuotes(props.quotes, isSortingAscending)
 
